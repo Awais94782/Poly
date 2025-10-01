@@ -89,7 +89,7 @@ style={{height:sizeHelper.calHp(75),width:"33%", backgroundColor:setHistory === 
 
 </View>
 
-<View style={{bottom:380}}>
+<View style={{bottom:385}}>
                 {
 
 setHistory === "alarams" ?   (
@@ -101,7 +101,7 @@ setHistory === "alarams" ?   (
                         width: "100%",
 
                         borderRadius: sizeHelper.calWp(20),
-                        height: sizeHelper.calHp(900), marginTop: sizeHelper.calHp(30), backgroundColor: colors.box,
+                        height: sizeHelper.calHp(900), marginTop: sizeHelper.calHp(10), backgroundColor: colors.box,
                     }}   >
 
                         <FlatList
@@ -161,20 +161,22 @@ contentContainerStyle={{gap:sizeHelper.calHp(5),
 }    
 </View>
 
-<View style={{bottom:380}}>
+<View style={{bottom:385
+    
+}}>
 
 
                 {
 
 setHistory === "lights" ?   (
 
-<View style={{height:sizeHelper.calHp(700),width:"100%",marginTop:400,backgroundColor:colors.box,borderRadius:sizeHelper.calWp(30)}}>
+<View style={{height:sizeHelper.calHp(400),width:"100%",marginTop:400,backgroundColor:colors.box,borderRadius:sizeHelper.calWp(30)}}>
 <View style={styles.bottombox2}>
                     <View style={{
                         width: "100%",
 
                         borderRadius: sizeHelper.calWp(20),
-                        height: sizeHelper.calHp(900), marginTop: sizeHelper.calHp(30), backgroundColor: colors.box,
+                        height: sizeHelper.calHp(280), marginTop: sizeHelper.calHp(10), backgroundColor: colors.box,
                     }}   >
 
                         <FlatList
