@@ -51,10 +51,10 @@ const FrontCamera = () => {
 
             </View>
 
-            <View style={{ flexDirection: "row", justifyContent: "space-between", marginHorizontal: sizeHelper.calWp(25) }}>
-                <CustomText text={"Last Event"} fontSize={27} marginTop={20} fontFamily={fonts.Roboto_Medium}/>
+            <View style={{ flexDirection: "row", justifyContent: "space-between", marginHorizontal: sizeHelper.calWp(30) }}>
+                <CustomText text={"Last Event"} fontSize={26} marginTop={20} fontFamily={fonts.Roboto_Medium}/>
 
-                <CustomText text={"Motion detected at 9:30 AM"} fontSize={27} marginTop={20} />
+                <CustomText text={"Motion detected at 9:30 AM"} fontSize={26} marginTop={20} />
 
 
             </View>
@@ -62,10 +62,10 @@ const FrontCamera = () => {
                 <View style={styles.borderline}>
                 </View>
 
-                <View style={{ flexDirection: "row", gap: sizeHelper.calWp(8), flexWrap: "wrap", justifyContent: "space-between", marginHorizontal: sizeHelper.calWp(45), bottom: sizeHelper.calHp(30) }}>
+                <View style={{ flexDirection: "row", gap: sizeHelper.calHp(7), flexWrap: "wrap", justifyContent: "space-between", marginHorizontal: sizeHelper.calWp(45), bottom: sizeHelper.calHp(30) }}>
                     {
 
-                        Event.map((item) => <View style={{ alignItems: "center", marginTop: 60, gap: sizeHelper.calHp(25) }}> <TouchableOpacity 
+                        Event.map((item) => <View style={{ alignItems: "center", marginTop: 50, gap: sizeHelper.calHp(15) }}> <TouchableOpacity 
                         
                         onPress={()=> setSelectOpetion(item.id)  }
                         
