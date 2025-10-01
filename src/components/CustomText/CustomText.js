@@ -5,7 +5,16 @@ import {colors} from "../../utils/Themes/Colors"
 import sizeHelper from "../../utils/Helpers";
 
 
-     const CustomText=({text,fontSize,fontWeight,color,fontFamily,textAlign,marginRight,marginHorizontal,marginLeft,alignSelf,marginTop,textDecorationLine,position,lineHeight})=>{
+     const CustomText=({text,
+      fontSize,fontWeight,
+      color,fontFamily,
+      textAlign,marginRight,
+      marginHorizontal,marginLeft,
+      alignSelf,marginTop,textDecorationLine,
+      position,lineHeight,bottom
+    
+    
+    })=>{
 return(
 
 <Text style={{ fontSize:sizeHelper.calHp(fontSize   || 21) ,
@@ -19,7 +28,8 @@ return(
       marginRight:sizeHelper.calWp(marginRight  || 0),
     textAlign:textAlign,
     textDecorationLine:textDecorationLine,position:position,
-    lineHeight:sizeHelper.calHp(lineHeight || 40)
+    lineHeight:sizeHelper.calHp(lineHeight || 40),
+    bottom:sizeHelper.calHp(bottom   ||  0),
 
     }} >
 

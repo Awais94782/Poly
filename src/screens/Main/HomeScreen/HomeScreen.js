@@ -140,10 +140,10 @@ navigation.navigate("DevicesScreen")
                                 </View>
 
                             </View>
-                            <View style={{ bottom: sizeHelper.calHp(55), margin: sizeHelper.calWp(25) }}>
+                            <View style={{ bottom:sizeHelper.calHp(50), margin: sizeHelper.calWp(25) }}>
 
                                 <CustomText text={"Linked"} />
-                                <CustomText text={"Connections"} />
+                                <CustomText text={"Connections"}bottom={15}/>
 
                             </View>
 
@@ -164,7 +164,7 @@ navigation.navigate("DevicesScreen")
                             <View style={{ bottom: sizeHelper.calHp(55), margin: sizeHelper.calWp(25) }}>
 
                                 <CustomText text={"Security"} />
-                                <CustomText text={"Reports"} />
+                                <CustomText text={"Reports"}bottom={15} />
 
                             </View>
 
@@ -185,6 +185,8 @@ navigation.navigate("DevicesScreen")
                     <CustomText text={"Current System"} fontSize={28} fontFamily={fonts.Roboto_SemiBold} marginTop={10}/>
                     <View style={styles.currentbox}>
                         <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-around", margin: 10 }}>
+                          
+                          
                             <View style={{ }}>
                                 <TouchableOpacity
                                     onPress={() => setSelectedOption("disarmed")}
@@ -272,7 +274,7 @@ navigation.navigate("DevicesScreen")
                         <View style={{ width: "100%", height: sizeHelper.calHp(1), backgroundColor: colors.PearlGrey, marginTop: sizeHelper.calHp(20) }}>
                         </View>
                         <View style={{ marginTop: sizeHelper.calHp(20), margin: sizeHelper.calWp(30), flexDirection: "row", justifyContent: "space-between" }}>
-                            <View style={{ height: sizeHelper.calHp(45), width: sizeHelper.calWp(200), borderRadius: sizeHelper.calWp(30), backgroundColor: colors.offwhite, alignItems: "center", justifyContent: "center" }} >
+                            <View style={{ height: sizeHelper.calHp(45), width: sizeHelper.calWp(200), borderRadius: sizeHelper.calWp(25), backgroundColor: colors.offwhite, alignItems: "center", justifyContent: "center" }} >
                                 <CustomText text={"4 New Events"} color={colors.red} fontSize={17} />
 
                             </View>
@@ -313,7 +315,6 @@ navigation.navigate("HistoryScreen")
                                     position: "absolute",
                                     top: "30%",
                                     left: "45%",
-
                                     height: sizeHelper.calWp(40),
                                     width: sizeHelper.calWp(40),
                                 }} />
@@ -420,7 +421,7 @@ navigation.navigate("NeighborsScreen")
 </View>
                         <View style={styles.mapsbottom}>
 
-                            <CustomText text={"42 Security Events in Your Area"} color={colors.PureBlack}/>
+                            <CustomText text={"42 Security Events in Your Area"} color={colors.PureBlack} fontSize={20}/>
 
                         </View>
 
@@ -440,9 +441,9 @@ navigation.navigate("NeighborsScreen")
 <View style={{gap:sizeHelper.calHp(5)}}>
 <CustomText text={"IR Fence"} fontFamily={fonts.Roboto_Medium} />
 <View style={{flexDirection:"row",alignItems:"center",gap:sizeHelper.calWp(10)}}>
-<View style={{height:sizeHelper.calHp(15),width:sizeHelper.calWp(15),borderRadius:sizeHelper.calWp(99),backgroundColor:colors.parrot  }}>
+<View style={{height:sizeHelper.calHp(15),width:sizeHelper.calWp(15),borderRadius:sizeHelper.calWp(99),backgroundColor:colors.parrot ,bottom:sizeHelper.calHp(15) }}>
 </View>
-<CustomText text={"Online"}/>
+<CustomText text={"Online"} bottom={15}/>
 
 </View>
 </View>
@@ -484,7 +485,7 @@ navigation.navigate("NeighborsScreen")
 </View>
 
 <View style={{flexDirection:"row",justifyContent:"space-around",gap:sizeHelper.calWp(70),top:sizeHelper.calHp(10)}}>
-<CustomText text={item.name} fontFamily={fonts.Roboto_Medium} />
+<CustomText text={item.name} fontFamily={fonts.Roboto_Medium} bottom={5} />
 <View style={{flexDirection:"row",gap:sizeHelper.calWp(20)}}>
 <Image source={images.wifi} style={{height:sizeHelper.calWp(40),width:sizeHelper.calWp(40) }}/>
 <Image source={images.battery} style={{height:sizeHelper.calWp(40),width:sizeHelper.calWp(40) }}/>
@@ -566,7 +567,7 @@ const styles = StyleSheet.create({
     currentbox: {
         height: sizeHelper.calHp(320),
         width: "100%",
-        backgroundColor:colors.offwhite,
+        backgroundColor:colors.box,
         borderRadius: sizeHelper.calWp(25), marginTop: sizeHelper.calHp(15),
     },
 
@@ -582,7 +583,7 @@ const styles = StyleSheet.create({
     },
     savedfeed: {
 
-        height: sizeHelper.calHp(330),
+        height: sizeHelper.calHp(345),
         width: "100%",
         borderRadius: sizeHelper.calWp(20),
         backgroundColor: colors.box,
@@ -600,7 +601,7 @@ const styles = StyleSheet.create({
     },
     mapsbottom: {
 
-height:sizeHelper.calHp(55),
+height:sizeHelper.calHp(50),
 width:sizeHelper.calWp(450),
 borderRadius:sizeHelper.calWp(20),
 backgroundColor:colors.offwhite,
