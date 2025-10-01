@@ -33,7 +33,7 @@ style={{marginTop:20}}>
 
 <View  style={{}}>
 
-<CustomText text={"Zain Malik"} fontSize={26} fontFamily={fonts.Roboto_Medium}/>
+<CustomText text={"Zain bhatti"} fontSize={26} fontFamily={fonts.Roboto_Medium}/>
 <CustomText text={"zainmalik02323@gmail.com"} color={colors.olivegray}/>
 
 </View>
