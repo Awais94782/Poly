@@ -91,14 +91,6 @@ dashbord.length -1 !== index &&(
 
 
   </View>
-
-
-
-
-
-
-
-
 )
 
 
