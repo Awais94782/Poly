@@ -28,7 +28,7 @@ return(
       marginRight:sizeHelper.calWp(marginRight  || 0),
     textAlign:textAlign,
     textDecorationLine:textDecorationLine,position:position,
-    lineHeight:sizeHelper.calHp(lineHeight || 40),
+    
     bottom:sizeHelper.calHp(bottom   ||  0),
 
     }} >

@@ -55,7 +55,7 @@ style={styles.cameraview}>
 
 </View>
 <View style={{justifyContent:"space-around",width:"68%"}}>
-<CustomText text={item.title}  fontFamily={fonts.Roboto_Medium}fontSize={25}/>    
+<CustomText text={item.title}  fontFamily={fonts.Roboto_Medium} fontSize={25}/>    
 <CustomText text={item.name} color={colors.olivegray}/>
 </View>
 <View>
@@ -145,7 +145,7 @@ bottomsetup:{
     alignItems:"center",
     justifyContent:"center",
     flexDirection:"row",
-gap:sizeHelper.calWp(10)
+gap:sizeHelper.calWp(10),marginTop:sizeHelper.calHp(180)
 }
 
 

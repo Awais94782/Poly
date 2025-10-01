@@ -27,7 +27,7 @@ navigation.goBack()
 
         </TouchableOpacity>
 
-        <View style={{left:sizeHelper.calHp(130)}}>
+        <View style={{left:sizeHelper.calHp(150)}}>
 
 <CustomText text={text} fontFamily={fonts.Roboto_Medium} fontSize={sizeHelper.calHp(45)}  marginLeft={ marginLeft || 52}  marginRight={marginRight}/>
 </View>

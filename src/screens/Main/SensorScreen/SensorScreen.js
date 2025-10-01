@@ -52,8 +52,8 @@ renderItem={( {item} ) =>(  <TouchableOpacity style={styles.windowbox}>
 
 <View style={{flexDirection:"row",gap:sizeHelper.calWp(60),top:sizeHelper.calHp(40)}}>
 <CustomText   text={item.title}  fontSize={26}  />
-<View style={{height:sizeHelper.calHp(30),width:sizeHelper.calWp(135),borderRadius:sizeHelper.calWp(40),backgroundColor:colors.connected,alignItems:"center",justifyContent:"center",right:30}}  >
-<CustomText text={"Connected"} color={colors.connectedtext} fontSize={16}  />
+<View style={{height:sizeHelper.calHp(30),width:sizeHelper.calWp(115),borderRadius:sizeHelper.calWp(40),backgroundColor:colors.connected,alignItems:"center",justifyContent:"center",right:sizeHelper.calWp(55),marginTop:sizeHelper.calHp(7)}}  >
+<CustomText text={"Connected"} color={colors.connectedtext} fontSize={14}  />
 </View>
 
 </View>
@@ -120,7 +120,7 @@ const styles=StyleSheet.create({
     
     },
     windowbox:{
-height:sizeHelper.calHp(280),
+height:sizeHelper.calHp(275),
 width:"100%",
 backgroundColor:colors.box,borderRadius:sizeHelper.calWp(30)
 
@@ -152,7 +152,7 @@ backgroundColor:colors.box,borderRadius:sizeHelper.calWp(30)
     borderline:{
        
         width:"90%",alignSelf:"center",
-      bottom:sizeHelper.calHp(70),
+      bottom:sizeHelper.calHp(55),
         borderWidth:sizeHelper.calWp(1.2),
         borderColor:colors.PearlGrey
     },

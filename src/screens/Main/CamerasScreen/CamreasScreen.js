@@ -46,7 +46,7 @@ const camera =[
 return(
 <SafeAreaView style={styles.mainview}>
 
-<AppHeader    text={" Cameras"} />
+<AppHeader    text={" Cameras"} marginRight={30} />
 
 <View style={{alignItems:"center",}}>
 <CustomText text={"3 Devices"}  color={colors.olivegray}  />
